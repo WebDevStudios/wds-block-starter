@@ -1,0 +1,11 @@
+{
+    "name": "webdevstudios/block-starter",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Mike England",
+            "email": "mike.england@webdevstudios.com"
+        }
+    ],
+    "require": {}
+}
