@@ -1,0 +1,24 @@
+{
+  "name": "wds-block-starter",
+  "version": "0.3.0",
+  "description": "An example plugin to demonstrate usage of OOPS-WP structures and utilities.",
+  "scripts": {
+    "build": "wp-scripts build",
+    "watch": "wp-scripts start --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebDevStudios/oops-wp-demo.git"
+  },
+  "author": "WebDevStudios",
+  "license": "GPLv2",
+  "bugs": {
+    "url": "https://github.com/WebDevStudios/oops-wp-demo/issues"
+  },
+  "homepage": "https://github.com/WebDevStudios/oops-wp-demo#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@wordpress/scripts": "^6.2.0"
+  }
+}
