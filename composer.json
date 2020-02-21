@@ -11,7 +11,7 @@
     "type": "wordpress-plugin",
     "autoload": {
         "psr-4": {
-            "WebDevStudios\\OopsWPDemo\\": "src/"
+            "WebDevStudios\\OopsWPDemo\\": "inc/"
         }
     },
     "require": {
