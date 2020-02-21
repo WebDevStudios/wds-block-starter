@@ -1,24 +1,37 @@
 {
   "name": "wds-block-starter",
-  "version": "0.3.0",
-  "description": "An example plugin to demonstrate usage of OOPS-WP structures and utilities.",
+  "version": "0.0.1",
+  "description": "Tooling for WDS Block Starter",
+  "main": "src/index.js",
   "scripts": {
-    "build": "wp-scripts build",
-    "watch": "wp-scripts start --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "wp-scripts start",
+    "build": "wp-scripts build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/WebDevStudios/oops-wp-demo.git"
+    "url": "git+https://github.com/WebDevStudios/wds-block-starter"
   },
-  "author": "WebDevStudios",
-  "license": "GPLv2",
+  "keywords": [
+    "Gutenberg",
+    "Exif Data"
+  ],
+  "author": "Mike England",
+  "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/WebDevStudios/oops-wp-demo/issues"
+    "url": "https://github.com/WebDevStudios/wds-block-starter/issues"
   },
-  "homepage": "https://github.com/WebDevStudios/oops-wp-demo#readme",
-  "dependencies": {},
+  "homepage": "https://github.com/WebDevStudios/wds-block-starter#readme",
   "devDependencies": {
-    "@wordpress/scripts": "^6.2.0"
-  }
+    "@wordpress/eslint-plugin": "^3.4.1",
+    "@wordpress/scripts": "^7.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.4.2",
+    "ignore-emit-webpack-plugin": "^2.0.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "precss": "^4.0.0",
+    "style-loader": "^1.1.3"
+  },
+  "dependencies": {}
 }
