@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "start": "wp-scripts start",
-    "build": "wp-scripts build"
+    "build": "wp-scripts build",
+    "lint:js": "wp-scripts lint-js",
   },
   "repository": {
     "type": "git",
