@@ -1,1 +1,1 @@
-import './demo-rich-text';
+import './rich-text';
