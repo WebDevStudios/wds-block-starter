@@ -8,7 +8,7 @@
  * Version:     0.0.1
  * License:     GPLv3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
- * Text Domain: ded
+ * Text Domain: wdsbs
  * Domain Path: /languages
  */
 
