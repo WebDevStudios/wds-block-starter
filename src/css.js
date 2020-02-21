@@ -1,2 +1,3 @@
-import './block/style.css';
-import './block/editor.css';
+// Import block styles.
+import './block/rich-text/style.css';
+import './block/rich-text/editor.css';

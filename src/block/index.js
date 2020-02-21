@@ -1,1 +1,1 @@
-console.log('hello kitty');
+import './demo-rich-text';
