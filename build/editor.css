@@ -1,0 +1,18 @@
+.css-transpile-test-editor {
+	font-size: 16px;
+}
+
+	.css-transpile-test-editor ul {
+		list-style-position: inside;
+	}
+
+	.css-transpile-test-editor ul li {
+			list-style: none;
+		}
+
+	.css-transpile-test-editor ul li svg {
+				margin-right: 6px;
+				position: relative;
+				top: 6px;
+			}
+
