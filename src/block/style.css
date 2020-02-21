@@ -1,0 +1,17 @@
+.css-transpile-test-style {
+	font-size: 16px;
+
+	ul {
+		list-style-position: inside;
+
+		li {
+			list-style: none;
+
+			svg {
+				margin-right: 6px;
+				position: relative;
+				top: 6px;
+			}
+		}
+	}
+}
