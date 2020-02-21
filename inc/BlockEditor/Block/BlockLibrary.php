@@ -24,22 +24,22 @@ use WebDevStudios\OopsWP\Structure\Editor\EditorBlock;
 use WebDevStudios\OopsWP\Utility\FilePathDependent;
 
 /**
- * Class Game
+ * Class BlockLibrary
  *
  * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
  * @since   2020-02-03
  * @package WebDevStudios\OopsWPDemo\BlockEditor\Block
  */
-class Game extends EditorBlock {
+class BlockLibrary extends EditorBlock {
 	use FilePathDependent;
 
-	/**
-	 * The name of the block.
-	 *
-	 * @var string
-	 * @since 2020-02-03
-	 */
-	private $block_name = 'oops-wp-demo/game';
+	// /**
+	//  * The name of the block.
+	//  *
+	//  * @var string
+	//  * @since 2020-02-03
+	//  */
+	// private $block_name = 'oops-wp-demo/game';
 
 	/**
 	 * Helper method to convert the block name to an asset prefix.
@@ -53,7 +53,7 @@ class Game extends EditorBlock {
 	}
 
 	/**
-	 * Register the Game script.
+	 * Register the BlockLibrary script.
 	 *
 	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
 	 * @since  2020-02-03
@@ -61,26 +61,26 @@ class Game extends EditorBlock {
 	public function register_script() {
 		wp_enqueue_script(
 			"{$this->get_block_asset_prefix()}script",
-			plugin_dir_url( $this->file_path ) . 'assets/dist/blocks/game/index.js',
+			plugin_dir_url( $this->file_path ) . 'build/index.js',
 			[
 				'wp-editor',
 				'wp-blocks',
 			],
-			filemtime( plugin_dir_path( $this->file_path ) . 'assets/dist/blocks/game/index.js' ),
+			filemtime( plugin_dir_path( $this->file_path ) . 'build/index.js' ),
 			true
 		);
 	}
 
 	/**
-	 * Register the Game styles.
+	 * Register the BlockLibrary styles.
 	 *
 	 * @author Jeremy Ward <jeremy.ward@webdevstudios.com>
 	 * @since  2020-02-03
 	 */
 	public function register_style() {
 		$styles = [
-			plugin_dir_path( $this->file_path ) . 'assets/dist/blocks/game/editor.css',
-			plugin_dir_path( $this->file_path ) . 'assets/dist/blocks/game/style.css',
+			plugin_dir_path( $this->file_path ) . 'build/editor.css',
+			plugin_dir_path( $this->file_path ) . 'build/style.css',
 		];
 
 		foreach ( $styles as $style ) {
@@ -90,7 +90,7 @@ class Game extends EditorBlock {
 
 			wp_enqueue_style(
 				"{$this->get_block_asset_prefix()}editor-style",
-				plugin_dir_url( $this->file_path ) . 'assets/dist/blocks/game/editor.css',
+				plugin_dir_url( $this->file_path ) . 'build/editor.css',
 				[],
 				filemtime( $style ),
 				false

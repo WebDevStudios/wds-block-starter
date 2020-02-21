@@ -12,7 +12,7 @@ namespace WebDevStudios\OopsWPDemo\BlockEditor;
 use WebDevStudios\OopsWP\Structure\Editor\EditorBlockInterface;
 use WebDevStudios\OopsWP\Structure\Service;
 use WebDevStudios\OopsWP\Utility\FilePathDependent;
-use WebDevStudios\OopsWPDemo\BlockEditor\Block\Game;
+use WebDevStudios\OopsWPDemo\BlockEditor\Block\BlockLibrary;
 
 /**
  * Class BlockRegistrar
@@ -31,7 +31,7 @@ class BlockRegistrar extends Service {
 	 * @since 2020-02-03
 	 */
 	private $blocks = [
-		Game::class,
+		BlockLibrary::class,
 	];
 
 	/**
