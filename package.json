@@ -40,9 +40,9 @@
   },
   "eslintConfig": {
     "extends": [
-      "@webdevstudios/js-coding-standards",
       "plugin:@wordpress/eslint-plugin/esnext",
-      "plugin:@wordpress/eslint-plugin/react"
+      "plugin:@wordpress/eslint-plugin/react",
+      "@webdevstudios/js-coding-standards"
     ]
   },
   "dependencies": {},
