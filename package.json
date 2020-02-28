@@ -6,7 +6,7 @@
   "scripts": {
     "start": "./node_modules/.bin/wp-scripts start",
     "build": "./node_modules/.bin/wp-scripts build",
-    "lint:css": "./node_modules/.bin/wp-scripts lint-style",
+    "lint:css": "./node_modules/.bin/wp-scripts lint-style && ./node_modules/.bin/sass-lint --config ./node_modules/@webdevstudios/css-coding-standards/.sass-lint.yml '**/*.scss' --verbose",
     "lint:js": "./node_modules/.bin/wp-scripts lint-js"
   },
   "repository": {
@@ -45,9 +45,12 @@
     ]
   },
   "dependencies": {},
-  "sasslintConfig": "node_modules/@webdevstudios/css-coding-standards/.sass-lint.yml",
+  "sasslintConfig": "./node_modules/@webdevstudios/css-coding-standards/.sass-lint.yml",
   "stylelint": {
     "extends": "stylelint-config-wordpress",
-    "ignoreFiles": "**/*.scss"
+    "ignoreFiles": [
+      "**/*.scss",
+      "build/**/*.css"
+    ]
   }
 }
