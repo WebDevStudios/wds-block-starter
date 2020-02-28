@@ -36,7 +36,7 @@ module.exports = {
         rules: [
             ...defaultConfig.module.rules,
             {
-              test: /\.css$/,
+              test: /\.(sa|sc|c)ss$/,
               use: [
                 {
                     loader: MiniCssExtractPlugin.loader,
