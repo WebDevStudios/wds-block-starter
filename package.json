@@ -4,10 +4,10 @@
   "description": "Tooling for WDS Block Starter",
   "main": "src/index.js",
   "scripts": {
-    "start": "wp-scripts start",
-    "build": "wp-scripts build",
-    "lint:css": "wp-scripts lint-style",
-    "lint:js": "wp-scripts lint-js"
+    "start": "./node_modules/.bin/wp-scripts start",
+    "build": "./node_modules/.bin/wp-scripts build",
+    "lint:css": "./node_modules/.bin/wp-scripts lint-style",
+    "lint:js": "./node_modules/.bin/wp-scripts lint-js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   "homepage": "https://github.com/WebDevStudios/wds-block-starter#readme",
   "devDependencies": {
     "@webdevstudios/css-coding-standards": "^1.0.0",
+    "@webdevstudios/js-coding-standards": "^1.0.1",
     "@wordpress/eslint-plugin": "^3.4.1",
     "@wordpress/scripts": "^7.1.0",
     "clean-webpack-plugin": "^3.0.0",
@@ -47,6 +48,6 @@
   "sasslintConfig": "node_modules/@webdevstudios/css-coding-standards/.sass-lint.yml",
   "stylelint": {
     "extends": "stylelint-config-wordpress",
-    "ignoreFiles":  "**/*.scss"
+    "ignoreFiles": "**/*.scss"
   }
 }
