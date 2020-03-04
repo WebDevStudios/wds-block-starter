@@ -23,7 +23,7 @@ registerBlockType( 'wdsbs/rich-text-demo', {
 	icon: 'edit',
 	category: 'common',
 	keywords: [
-		__( 'richtext', 'wds' ),
+		__( 'richtext', 'wdsbs' ),
 	],
 	supports: {
 		multiple: false,
