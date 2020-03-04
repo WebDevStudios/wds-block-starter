@@ -18,8 +18,8 @@ const {
 	}
 } = wp;
 
-registerBlockType( 'wdsbs/flash-headlines', {
-	title: __( 'RichText Demo', 'dj-wp-flash-headlines' ),
+registerBlockType( 'wdsbs/rich-text-demo', {
+	title: __( 'RichText Demo', 'wdsbs' ),
 	icon: 'edit',
 	category: 'common',
 	keywords: [
@@ -29,10 +29,10 @@ registerBlockType( 'wdsbs/flash-headlines', {
 		multiple: false,
 	},
 	attributes: {
-		content: {
-		type: 'array',
-		source: 'children',
-		selector: 'p',
+			content: {
+			type: 'array',
+			source: 'children',
+			selector: 'p',
 		},
 	},
 	edit,
