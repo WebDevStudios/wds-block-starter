@@ -15,7 +15,7 @@ const {
 	},
 	blocks: {
 		registerBlockType,
-	}
+	},
 } = wp;
 
 registerBlockType( 'wdsbs/rich-text-demo', {
@@ -29,7 +29,7 @@ registerBlockType( 'wdsbs/rich-text-demo', {
 		multiple: false,
 	},
 	attributes: {
-			content: {
+		content: {
 			type: 'array',
 			source: 'children',
 			selector: 'p',
@@ -37,4 +37,4 @@ registerBlockType( 'wdsbs/rich-text-demo', {
 	},
 	edit,
 	save,
-});
+} );
