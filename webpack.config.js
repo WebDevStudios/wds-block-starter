@@ -2,6 +2,7 @@
  * Internal Dependencies.
  */
 const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );
+const glob = require( 'glob' );
 
 /**
  * External Dependencies.
@@ -14,6 +15,8 @@ module.exports = {
 	...defaultConfig,
 	entry: {
 		...defaultConfig.entry,
+		style: glob.sync( './src/**/*/style.scss' ), // Import all style.scss files.
+		editor: glob.sync( './src/**/*/editor.scss' ), // Import all editor.scss files.
 	},
 	module: {
 		...defaultConfig.module,
