@@ -39,6 +39,11 @@ module.exports = {
 			filename: '[name].css',
 			chunkFilename: '[id].css',
 		} ),
-		new IgnoreEmitPlugin( [ 'index.asset.php' ] ),
+		new IgnoreEmitPlugin( [
+			'editor.asset.php',
+			'editor.js',
+			'style.asset.php',
+			'style.js',
+		] ),
 	],
 };
