@@ -8,7 +8,7 @@
     "build": "./node_modules/.bin/wp-scripts build",
     "lint:css": "./node_modules/.bin/wp-scripts lint-style && ./node_modules/.bin/sass-lint --config ./node_modules/@webdevstudios/css-coding-standards/.sass-lint.yml '**/*.scss' --verbose",
     "lint:js": "./node_modules/.bin/wp-scripts lint-js",
-    "lint:php": "./vendor/bin/phpcs --standard=WebDevStudios --extensions=php ./ --ignore='./build/*,./node_modules/*,./vendor/*'"
+    "lint:php": "./vendor/bin/phpcs --standard=./.phpcs.xml.dist --extensions=php ./ --ignore='./build/*,./node_modules/*,./vendor/*'"
   },
   "repository": {
     "type": "git",
