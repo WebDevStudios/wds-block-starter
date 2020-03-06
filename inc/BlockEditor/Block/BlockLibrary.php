@@ -33,13 +33,13 @@ use WebDevStudios\OopsWP\Utility\FilePathDependent;
 class BlockLibrary extends EditorBlock {
 	use FilePathDependent;
 
-	// /**
-	//  * The name of the block.
-	//  *
-	//  * @var string
-	//  * @since 2020-02-03
-	//  */
-	// private $block_name = 'oops-wp-demo/game';
+	/**
+	 * The name of the block.
+	 *
+	 * @var string
+	 * @since 2020-02-03
+	 */
+	private $block_name = 'wdsbs/block-library';
 
 	/**
 	 * Helper method to convert the block name to an asset prefix.
