@@ -15,10 +15,10 @@
  *
  * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
  * @since   2020-02-03
- * @package WebDevStudios\OopsWPDemo\BlockEditor\Block
+ * @package WebDevStudios\BlockLibrary\BlockEditor\Block
  */
 
-namespace WebDevStudios\OopsWPDemo\BlockEditor\Block;
+namespace WebDevStudios\BlockLibrary\BlockEditor\Block;
 
 use WebDevStudios\OopsWP\Structure\Editor\EditorBlock;
 use WebDevStudios\OopsWP\Utility\FilePathDependent;
@@ -28,7 +28,7 @@ use WebDevStudios\OopsWP\Utility\FilePathDependent;
  *
  * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
  * @since   2020-02-03
- * @package WebDevStudios\OopsWPDemo\BlockEditor\Block
+ * @package WebDevStudios\BlockLibrary\BlockEditor\Block
  */
 class BlockLibrary extends EditorBlock {
 	use FilePathDependent;

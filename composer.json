@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "WebDevStudios\\OopsWPDemo\\": "inc/"
+            "WebDevStudios\\BlockLibrary\\": "inc/"
         }
     },
     "require": {

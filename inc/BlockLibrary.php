@@ -27,10 +27,10 @@
  * @package WebDevStudios\OopsWPDemo
  */
 
-namespace WebDevStudios\OopsWPDemo;
+namespace WebDevStudios\BlockLibrary;
 
 use WebDevStudios\OopsWP\Structure\Plugin\Plugin;
-use WebDevStudios\OopsWPDemo\BlockEditor\BlockRegistrar;
+use WebDevStudios\BlockLibrary\BlockEditor\BlockRegistrar;
 
 /**
  * Class OopsWPDemo
@@ -39,7 +39,7 @@ use WebDevStudios\OopsWPDemo\BlockEditor\BlockRegistrar;
  * @since   2020-01-31
  * @package WebDevStudios\OopsWPDemo
  */
-class OopsWPDemo extends Plugin {
+class BlockLibrary extends Plugin {
 	/**
 	 * OopsWPDemo constructor.
 	 *
