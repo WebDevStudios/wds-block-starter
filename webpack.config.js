@@ -1,5 +1,11 @@
+/**
+ * Internal Dependencies.
+ */
 const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );
 
+/**
+ * External Dependencies.
+ */
 const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
 const IgnoreEmitPlugin = require( 'ignore-emit-webpack-plugin' );
