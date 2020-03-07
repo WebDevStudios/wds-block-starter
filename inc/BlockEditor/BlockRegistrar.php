@@ -4,22 +4,22 @@
  *
  * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
  * @since   2020-02-03
- * @package WebDevStudios\OopsWPDemo\BlockEditor
+ * @package WebDevStudios\BlockLibrary\BlockEditor
  */
 
-namespace WebDevStudios\OopsWPDemo\BlockEditor;
+namespace WebDevStudios\BlockLibrary\BlockEditor;
 
 use WebDevStudios\OopsWP\Structure\Editor\EditorBlockInterface;
 use WebDevStudios\OopsWP\Structure\Service;
 use WebDevStudios\OopsWP\Utility\FilePathDependent;
-use WebDevStudios\OopsWPDemo\BlockEditor\Block\BlockLibrary;
+use WebDevStudios\BlockLibrary\BlockEditor\Block\BlockLibrary;
 
 /**
  * Class BlockRegistrar
  *
  * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
  * @since   2020-02-03
- * @package WebDevStudios\OopsWPDemo\BlockEditor
+ * @package WebDevStudios\BlockLibrary\BlockEditor
  */
 class BlockRegistrar extends Service {
 	use FilePathDependent;

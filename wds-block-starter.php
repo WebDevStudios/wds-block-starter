@@ -10,9 +10,12 @@
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: wdsbs
  * Domain Path: /languages
+ *
+ * @package WebDevStudios\BlockLibrary
+ * @since 0.0.1
  */
 
-use WebDevStudios\OopsWPDemo\OopsWPDemo;
+use WebDevStudios\BlockLibrary\BlockLibrary;
 
 $autoload = __DIR__ . '/vendor/autoload.php';
 
@@ -22,7 +25,7 @@ if ( is_readable( $autoload ) ) {
 
 add_action( 'plugins_loaded', function() {
 	try {
-		( new OopsWPDemo( __FILE__ ) )->run();
+		( new BlockLibrary( __FILE__ ) )->run();
 	} catch ( Error $e ) {
 		add_action( 'admin_notices', function() {
 			$message = __(

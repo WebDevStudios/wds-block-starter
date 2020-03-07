@@ -15,10 +15,10 @@
  *
  * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
  * @since   2020-02-03
- * @package WebDevStudios\OopsWPDemo\BlockEditor\Block
+ * @package WebDevStudios\BlockLibrary\BlockEditor\Block
  */
 
-namespace WebDevStudios\OopsWPDemo\BlockEditor\Block;
+namespace WebDevStudios\BlockLibrary\BlockEditor\Block;
 
 use WebDevStudios\OopsWP\Structure\Editor\EditorBlock;
 use WebDevStudios\OopsWP\Utility\FilePathDependent;
@@ -28,18 +28,18 @@ use WebDevStudios\OopsWP\Utility\FilePathDependent;
  *
  * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
  * @since   2020-02-03
- * @package WebDevStudios\OopsWPDemo\BlockEditor\Block
+ * @package WebDevStudios\BlockLibrary\BlockEditor\Block
  */
 class BlockLibrary extends EditorBlock {
 	use FilePathDependent;
 
-	// /**
-	//  * The name of the block.
-	//  *
-	//  * @var string
-	//  * @since 2020-02-03
-	//  */
-	// private $block_name = 'oops-wp-demo/game';
+	/**
+	 * The name of the block.
+	 *
+	 * @var string
+	 * @since 2020-02-03
+	 */
+	private $block_name = 'wdsbs/block-library';
 
 	/**
 	 * Helper method to convert the block name to an asset prefix.

@@ -15,26 +15,26 @@ const {
 	},
 	blocks: {
 		registerBlockType,
-	}
+	},
 } = wp;
 
-registerBlockType( 'wdsbs/flash-headlines', {
-	title: __( 'RichText Demo', 'dj-wp-flash-headlines' ),
+registerBlockType( 'wdsbs/rich-text-demo', {
+	title: __( 'RichText Demo', 'wdsbs' ),
 	icon: 'edit',
 	category: 'common',
 	keywords: [
-		__( 'richtext', 'wds' ),
+		__( 'richtext', 'wdsbs' ),
 	],
 	supports: {
 		multiple: false,
 	},
 	attributes: {
 		content: {
-		type: 'array',
-		source: 'children',
-		selector: 'p',
+			type: 'array',
+			source: 'children',
+			selector: 'p',
 		},
 	},
 	edit,
 	save,
-});
+} );

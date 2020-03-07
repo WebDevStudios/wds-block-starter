@@ -4,22 +4,22 @@
 const {
 	editor: {
 		RichText,
-	}
+	},
 } = wp;
 
-const Save = (props) => {
+const Save = ( props ) => {
 	const {
 		attributes: {
-		content,
+			content,
 		},
 		className,
 	} = props;
 
 	return (
 		<RichText.Content
-		className={ className }
-		tagName="p"
-		value={ content }
+			className={ className }
+			tagName="p"
+			value={ content }
 		/>
 	);
 };

@@ -8,10 +8,9 @@
             "email": "mike.england@webdevstudios.com"
         }
     ],
-    "type": "wordpress-plugin",
     "autoload": {
         "psr-4": {
-            "WebDevStudios\\OopsWPDemo\\": "inc/"
+            "WebDevStudios\\BlockLibrary\\": "inc/"
         }
     },
     "require": {
