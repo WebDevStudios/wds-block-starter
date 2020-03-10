@@ -11,19 +11,29 @@ const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
 const IgnoreEmitPlugin = require( 'ignore-emit-webpack-plugin' );
 
+const entry = {
+	...defaultConfig.entry,
+};
+
+const styles = glob.sync( './src/**/*/style.{scss,css}' );
+if ( styles.length ) {
+	entry.style = styles;
+}
+
+const editorStyles = glob.sync( './src/**/*/editor.{scss,css}' );
+if ( editorStyles.length ) {
+	entry.editor = editorStyles;
+}
+
 module.exports = {
 	...defaultConfig,
-	entry: {
-		...defaultConfig.entry,
-		style: glob.sync( './src/**/*/style.scss' ), // Import all style.scss files.
-		editor: glob.sync( './src/**/*/editor.scss' ), // Import all editor.scss files.
-	},
+	entry,
 	module: {
 		...defaultConfig.module,
 		rules: [
 			...defaultConfig.module.rules,
 			{
-				test: /\.(sa|sc|c)ss$/,
+				test: /\.s?css$/,
 				use: [
 					{ loader: MiniCssExtractPlugin.loader },
 					{ loader: 'css-loader', options: { importLoaders: 1 } },
