@@ -11,11 +11,11 @@
  * Text Domain: wdsbs
  * Domain Path: /languages
  *
- * @package WebDevStudios\BlockLibrary
+ * @package WebDevStudios\BlockStarter
  * @since 0.0.1
  */
 
-namespace WebDevStudios\BlockStater;
+namespace WebDevStudios\BlockStarter;
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
