@@ -3,6 +3,7 @@ const production = 'production' === process.env.NODE_ENV ? true : false;
 // Assign plugins.
 const plugins = [
 	require( 'precss' ),
+	require( 'postcss-safe-parser' ),
 	require( 'autoprefixer' ),
 ];
 
