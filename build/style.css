@@ -1,5 +1,7 @@
+/* Sass Partial Test */
+
 .example-block-1 {
-	color: mediumorchid
+	color: #2c50f3;
 }
 .example-block-2-nested {
 	color: palegreen;
