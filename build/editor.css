@@ -1,18 +1,17 @@
-.css-transpile-test-editor {
-	font-size: 16px;
+.example-block-1-editor {
+	color: mediumorchid
+}
+.example-block-2-editor {
+	color: orange;
+}
+.example-block-3-editor {
+	color: purple;
+}
+.alphabetical-test-editor {
+	color: green;
+}
+.wp-block-wdsbs-rich-text-demo {
+	color: rgb(33, 175, 194);
 }
 
-	.css-transpile-test-editor ul {
-		list-style-position: inside;
-	}
-
-	.css-transpile-test-editor ul li {
-			list-style: none;
-		}
-
-	.css-transpile-test-editor ul li svg {
-				margin-right: 6px;
-				position: relative;
-				top: 6px;
-			}
-
+/*# sourceMappingURL=editor.css.map*/

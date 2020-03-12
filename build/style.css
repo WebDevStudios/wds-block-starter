@@ -1,19 +1,24 @@
-.css-transpile-test-style {
-	font-size: 16px;
+.example-block-1 {
+	color: mediumorchid
+}
+.example-block-2-nested {
+	color: palegreen;
+}
+.example-block-2 {
+	color: orange;
+}
+.example-block-3 {
+	color: purple;
+}
+.alphabetical-test-style {
+	color: green;
 }
 
-	.css-transpile-test-style ul {
-		list-style-position: inside;
-	}
+.string-length-test-style {
+	color: green;
+}
+.wp-block-wdsbs-rich-text-demo {
+	color: rgb(206, 70, 70);
+}
 
-	.css-transpile-test-style ul li {
-			color: #ff9900;
-			list-style: none;
-		}
-
-	.css-transpile-test-style ul li svg {
-				margin-right: 6px;
-				position: relative;
-				top: 6px;
-			}
-
+/*# sourceMappingURL=style.css.map*/
