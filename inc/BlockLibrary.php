@@ -24,7 +24,7 @@
  *
  * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
  * @since   2020-01-31
- * @package WebDevStudios\OopsWPDemo
+ * @package WebDevStudios\OopsWP
  */
 
 namespace WebDevStudios\BlockLibrary;
@@ -33,15 +33,15 @@ use WebDevStudios\OopsWP\Structure\Plugin\Plugin;
 use WebDevStudios\BlockLibrary\BlockEditor\BlockRegistrar;
 
 /**
- * Class OopsWPDemo
+ * Class OopsWP
  *
  * @author  Jeremy Ward <jeremy.ward@webdevstudios.com>
  * @since   2020-01-31
- * @package WebDevStudios\OopsWPDemo
+ * @package WebDevStudios\OopsWP
  */
 class BlockLibrary extends Plugin {
 	/**
-	 * OopsWPDemo constructor.
+	 * OopsWP constructor.
 	 *
 	 * @param string $file_path The plugin file path.
 	 *

@@ -29,8 +29,8 @@ add_action( 'plugins_loaded', function() {
 	} catch ( Error $e ) {
 		add_action( 'admin_notices', function() {
 			$message = __(
-				'Could not locate OOPS-WP Demo class files. Did you remember to run composer install?',
-				'oops-wp-demo'
+				'Could not locate OOPS-WP class files. Did you remember to run composer install?',
+				'wdsbs'
 			);
 
 			echo wp_kses_post( '<div class="notice notice-error"><p>' . $message . '</p></div>' );
