@@ -1,49 +1,41 @@
+/**
+ * Internal Dependencies.
+ */
 const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );
-const path = require( 'path' );
+const glob = require( 'glob' );
 
+/**
+ * External Dependencies.
+ */
 const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' );
 const IgnoreEmitPlugin = require( 'ignore-emit-webpack-plugin' );
 
+const entry = {
+	...defaultConfig.entry,
+};
+
+const styles = glob.sync( './src/**/*/style.{scss,css}' );
+if ( styles.length ) {
+	entry.style = styles;
+}
+
+const editorStyles = glob.sync( './src/**/*/editor.{scss,css}' );
+if ( editorStyles.length ) {
+	entry.editor = editorStyles;
+}
+
 module.exports = {
 	...defaultConfig,
-	entry: {
-		...defaultConfig.entry,
-		css: path.resolve( process.cwd(), 'src', 'css.js' ),
-	},
-	optimization: {
-		namedChunks: true,
-		namedModules: true,
-		splitChunks: {
-			cacheGroups: {
-				styles: {
-					name: 'style',
-					test: /style\.(sa|sc|c)ss$/,
-					chunks: 'all',
-					enforce: true,
-				},
-				editor: {
-					name: 'editor',
-					test: /editor\.(sa|sc|c)ss$/,
-					chunks: 'all',
-					enforce: true,
-				},
-			},
-		},
-	},
+	entry,
 	module: {
 		...defaultConfig.module,
 		rules: [
 			...defaultConfig.module.rules,
 			{
-				test: /\.(sa|sc|c)ss$/,
+				test: /\.s?css$/,
 				use: [
-					{
-						loader: MiniCssExtractPlugin.loader,
-						options: {
-							hmr: 'development' === process.env.NODE_ENV,
-						},
-					},
+					{ loader: MiniCssExtractPlugin.loader },
 					{ loader: 'css-loader', options: { importLoaders: 1 } },
 					'postcss-loader',
 				],
@@ -57,6 +49,11 @@ module.exports = {
 			filename: '[name].css',
 			chunkFilename: '[id].css',
 		} ),
-		new IgnoreEmitPlugin( [ 'index.asset.php', 'css.asset.php', 'css.js', 'css.js.map', 'style.js', 'editor.js' ] ),
+		new IgnoreEmitPlugin( [
+			'editor.asset.php',
+			'editor.js',
+			'style.asset.php',
+			'style.js',
+		] ),
 	],
 };
