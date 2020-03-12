@@ -1,26 +1,16 @@
 {
-    "name": "webdevstudios/block-starter",
-    "description": "A Gutenberg starter plugin.",
-    "type": "wordpress-plugin",
-    "authors": [
-        {
-            "name": "Mike England",
-            "email": "mike.england@webdevstudios.com"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "WebDevStudios\\BlockLibrary\\": "inc/"
-        }
-    },
-    "require": {
-        "composer/installers": "^1.0",
-        "webdevstudios/oops-wp": "^0.3.0",
-        "ext-libxml": "^7.2",
-        "ext-json": "^1.6",
-        "php": "^7.2"
-    },
-    "require-dev": {
-        "webdevstudios/php-coding-standards": "^1.0"
+  "name": "webdevstudios/block-starter",
+  "description": "A Gutenberg starter plugin.",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "Mike England",
+      "email": "mike.england@webdevstudios.com"
     }
+  ],
+  "require": {
+  },
+  "require-dev": {
+    "webdevstudios/php-coding-standards": "^1.0"
+  }
 }

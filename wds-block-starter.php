@@ -15,25 +15,10 @@
  * @since 0.0.1
  */
 
-use WebDevStudios\BlockLibrary\BlockLibrary;
+namespace WebDevStudios\BlockStater;
 
-$autoload = __DIR__ . '/vendor/autoload.php';
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 
-if ( is_readable( $autoload ) ) {
-	require_once $autoload;
-}
-
-add_action( 'plugins_loaded', function() {
-	try {
-		( new BlockLibrary( __FILE__ ) )->run();
-	} catch ( Error $e ) {
-		add_action( 'admin_notices', function() {
-			$message = __(
-				'Could not locate OOPS-WP class files. Did you remember to run composer install?',
-				'wdsbs'
-			);
-
-			echo wp_kses_post( '<div class="notice notice-error"><p>' . $message . '</p></div>' );
-		} );
-	}
-} );
+// Enqueue files.
+require plugin_dir_path( __FILE__ ) . '/inc/enqueue-scripts.php';
