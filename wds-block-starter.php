@@ -11,29 +11,53 @@
  * Text Domain: wdsbs
  * Domain Path: /languages
  *
- * @package WebDevStudios\BlockLibrary
+ * @package WebDevStudios\BlockStarter
  * @since 0.0.1
  */
 
-use WebDevStudios\BlockLibrary\BlockLibrary;
+namespace WebDevStudios\BlockStarter;
 
-$autoload = __DIR__ . '/vendor/autoload.php';
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
 
-if ( is_readable( $autoload ) ) {
-	require_once $autoload;
+/**
+ * Register the block with WordPress.
+ *
+ * @author WebDevStudios
+ * @since 0.0.1
+ */
+function register_block() {
+
+	// Register editor script.
+	wp_register_script(
+		'wdsbs-editor-script',
+		plugins_url( 'build/index.js', __FILE__ ),
+		[ 'wp-editor' ],
+		filemtime( plugin_dir_path( __FILE__ ) . 'build/index.js' ),
+		true
+	);
+
+	// Register editor style.
+	wp_register_style(
+		'wdsbs-editor-style',
+		plugins_url( 'build/editor.css', __FILE__ ),
+		[ 'wp-edit-blocks' ],
+		filemtime( plugin_dir_path( __FILE__ ) . 'build/editor.css' )
+	);
+
+	// Register frontend style.
+	wp_register_style(
+		'wdsbs-style',
+		plugins_url( 'build/style.css', __FILE__ ),
+		[],
+		filemtime( plugin_dir_path( __FILE__ ) . 'build/style.css' )
+	);
+
+	// Register block with WordPress.
+	register_block_type( 'wdsbs/rich-text-demo', array(
+		'editor_script' => 'wdsbs-editor-script',
+		'editor_style'  => 'wdsbs-editor-style',
+		'style'         => 'wdsbs-style',
+	) );
 }
-
-add_action( 'plugins_loaded', function() {
-	try {
-		( new BlockLibrary( __FILE__ ) )->run();
-	} catch ( Error $e ) {
-		add_action( 'admin_notices', function() {
-			$message = __(
-				'Could not locate OOPS-WP Demo class files. Did you remember to run composer install?',
-				'oops-wp-demo'
-			);
-
-			echo wp_kses_post( '<div class="notice notice-error"><p>' . $message . '</p></div>' );
-		} );
-	}
-} );
+add_action( 'init', 'WebDevStudios\BlockStarter\register_block' );
