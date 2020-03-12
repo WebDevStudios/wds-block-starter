@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/WebDevStudios/wds-block-starter#readme",
   "dependencies": {
+    "css-mqpacker": "^7.0.0",
     "postcss-safe-parser": "^4.0.2"
   },
   "devDependencies": {
