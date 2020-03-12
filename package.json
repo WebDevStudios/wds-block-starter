@@ -1,29 +1,30 @@
 {
   "name": "wds-block-starter",
   "version": "0.0.1",
-  "description": "Tooling for WDS Block Starter",
+  "description": "WebDevStudios Block Starter",
   "main": "src/index.js",
   "scripts": {
-    "start": "./node_modules/.bin/wp-scripts start",
-    "build": "./node_modules/.bin/wp-scripts build",
-    "lint:css": "./node_modules/.bin/wp-scripts lint-style && ./node_modules/.bin/sass-lint --config ./node_modules/@webdevstudios/css-coding-standards/.sass-lint.yml '**/*.scss' --verbose",
-    "lint:js": "./node_modules/.bin/wp-scripts lint-js",
-    "lint:php": "./vendor/bin/phpcs --standard=./.phpcs.xml.dist --extensions=php ./ --ignore='./build/*,./node_modules/*,./vendor/*'"
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "lint:css": "wp-scripts lint-style && ./node_modules/.bin/sass-lint --config ./node_modules/@webdevstudios/css-coding-standards/.sass-lint.yml '**/*.scss' --verbose",
+    "lint:js": "wp-scripts lint-js",
+    "lint:php": "./vendor/bin/phpcs --standard=./.phpcs.xml.dist --extensions=php ./ --ignore='./build/*,./node_modules/*,./vendor/*'",
+    "packages-update": "wp-scripts packages-update"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WebDevStudios/wds-block-starter"
   },
   "keywords": [
-    "Gutenberg",
-    "Exif Data"
+    "Gutenberg"
   ],
-  "author": "Mike England",
+  "author": "WebDevStudios",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/WebDevStudios/wds-block-starter/issues"
   },
   "homepage": "https://github.com/WebDevStudios/wds-block-starter#readme",
+  "dependencies": {},
   "devDependencies": {
     "@webdevstudios/css-coding-standards": "^1.0.0",
     "@webdevstudios/js-coding-standards": "~1.0.2",
@@ -44,7 +45,6 @@
       "@webdevstudios/js-coding-standards"
     ]
   },
-  "dependencies": {},
   "sasslintConfig": "./node_modules/@webdevstudios/css-coding-standards/.sass-lint.yml",
   "stylelint": {
     "extends": "stylelint-config-wordpress",
