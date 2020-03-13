@@ -28,30 +28,47 @@ defined( 'ABSPATH' ) || exit;
  */
 function register_block() {
 
+	// Define our assets.
+	$editor_script  = 'build/index.js';
+	$editor_style   = 'build/editor.css';
+	$frontend_style = 'build/style.css';
+
+	// Verify we have an editor script.
+	if ( ! file_exists( plugin_dir_path( __FILE__ ) . $editor_script ) ) {
+		wp_die( esc_html__( 'Whoops! You need to run `npm run build` for the WDS Block Starter first.', 'wdsbs' ) );
+	}
+
+	// Autoload dependencies and version.
+	$asset_file = require plugin_dir_path( __FILE__ ) . 'build/index.asset.php';
+
 	// Register editor script.
 	wp_register_script(
 		'wdsbs-editor-script',
-		plugins_url( 'build/index.js', __FILE__ ),
-		[ 'wp-editor' ],
-		filemtime( plugin_dir_path( __FILE__ ) . 'build/index.js' ),
+		plugins_url( $editor_script, __FILE__ ),
+		$asset_file['dependencies'],
+		$asset_file['version'],
 		true
 	);
 
 	// Register editor style.
-	wp_register_style(
-		'wdsbs-editor-style',
-		plugins_url( 'build/editor.css', __FILE__ ),
-		[ 'wp-edit-blocks' ],
-		filemtime( plugin_dir_path( __FILE__ ) . 'build/editor.css' )
-	);
+	if ( file_exists( $editor_style ) ) {
+		wp_register_style(
+			'wdsbs-editor-style',
+			plugins_url( $editor_style, __FILE__ ),
+			[ 'wp-edit-blocks' ],
+			filemtime( plugin_dir_path( __FILE__ ) . $editor_style )
+		);
+	}
 
 	// Register frontend style.
-	wp_register_style(
-		'wdsbs-style',
-		plugins_url( 'build/style.css', __FILE__ ),
-		[],
-		filemtime( plugin_dir_path( __FILE__ ) . 'build/style.css' )
-	);
+	if ( file_exists( $frontend_style ) ) {
+		wp_register_style(
+			'wdsbs-style',
+			plugins_url( $frontend_style, __FILE__ ),
+			[],
+			filemtime( plugin_dir_path( __FILE__ ) . $frontend_style )
+		);
+	}
 
 	// Register block with WordPress.
 	register_block_type( 'wdsbs/rich-text-demo', array(
