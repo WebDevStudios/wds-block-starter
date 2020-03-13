@@ -9,7 +9,8 @@
     "lint:css": "wp-scripts lint-style && ./node_modules/.bin/sass-lint --config ./node_modules/@webdevstudios/css-coding-standards/.sass-lint.yml '**/*.scss' --verbose",
     "lint:js": "wp-scripts lint-js",
     "lint:php": "./vendor/bin/phpcs --standard=./.phpcs.xml.dist --extensions=php ./ --ignore='./build/*,./node_modules/*,./vendor/*'",
-    "packages-update": "wp-scripts packages-update"
+    "packages-update": "wp-scripts packages-update",
+    "postinstall": "wp-scripts build && composer install"
   },
   "repository": {
     "type": "git",
