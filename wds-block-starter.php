@@ -51,20 +51,24 @@ function register_block() {
 	);
 
 	// Register editor style.
-	wp_register_style(
-		'wdsbs-editor-style',
-		plugins_url( $editor_style, __FILE__ ),
-		[ 'wp-edit-blocks' ],
-		filemtime( plugin_dir_path( __FILE__ ) . $editor_style )
-	);
+	if ( file_exists( $editor_style ) ) {
+		wp_register_style(
+			'wdsbs-editor-style',
+			plugins_url( $editor_style, __FILE__ ),
+			[ 'wp-edit-blocks' ],
+			filemtime( plugin_dir_path( __FILE__ ) . $editor_style )
+		);
+	}
 
 	// Register frontend style.
-	wp_register_style(
-		'wdsbs-style',
-		plugins_url( $frontend_style, __FILE__ ),
-		[],
-		filemtime( plugin_dir_path( __FILE__ ) . $frontend_style )
-	);
+	if ( file_exists( $frontend_style ) ) {
+		wp_register_style(
+			'wdsbs-style',
+			plugins_url( $frontend_style, __FILE__ ),
+			[],
+			filemtime( plugin_dir_path( __FILE__ ) . $frontend_style )
+		);
+	}
 
 	// Register block with WordPress.
 	register_block_type( 'wdsbs/rich-text-demo', array(
