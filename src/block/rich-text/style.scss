@@ -1,5 +1,53 @@
+//
+// Sass Feature Testing
+//
+
+// Variables
 $color-red: rgb(206, 70, 70);
 
 .wp-block-wdsbs-rich-text-demo {
 	color: $color-red;
+}
+
+// Mixin
+nav ul {
+	@include horizontal-list;
+}
+
+//
+// Autoprefixer Test
+//
+.auto-prefixer-example {
+	background: linear-gradient(to bottom, white, black);
+	display: grid;
+	user-select: none;
+}
+
+//
+// Media Query Packer Test
+//
+.foo {
+	width: 100%;
+}
+
+@media (min-width: 640px) {
+	.foo {
+		width: 50%;
+	}
+}
+
+.bar {
+	width: 20%;
+}
+
+@media (min-width: 320px) {
+	.bar {
+		width: 25%;
+	}
+}
+
+@media (min-width: 640px) {
+	.bar {
+		width: 80%;
+	}
 }
