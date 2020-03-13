@@ -23,7 +23,7 @@ npm install
 
 ## Development
 
-To watch for changes and preview with HMR
+To watch for changes.
 
 ```bash
 npm run start
