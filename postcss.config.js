@@ -27,5 +27,6 @@ if ( production ) {
 
 // Module Export
 module.exports = {
+	parser: 'postcss-scss',
 	plugins,
 };
