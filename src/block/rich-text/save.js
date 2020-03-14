@@ -2,7 +2,7 @@
  * WP dependencies
  */
 const {
-	editor: {
+	blockEditor: {
 		RichText,
 	},
 } = wp;
