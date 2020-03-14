@@ -9,7 +9,26 @@ $color-red: rgb(206, 70, 70);
 	color: $color-red;
 }
 
-// Mixin
+//
+// SCSS Mixin Test
+//
+@mixin reset-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+@mixin horizontal-list {
+	@include reset-list;
+
+	li {
+		display: inline-block;
+		margin-left: -20px;
+		margin-right: 20px;
+	}
+}
+
+// Call Mixin
 nav ul {
 	@include horizontal-list;
 }
