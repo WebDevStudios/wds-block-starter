@@ -10,7 +10,6 @@ const production = 'production' === process.env.NODE_ENV ? true : false;
 const plugins = [
 	require( 'postcss-safe-parser' ),
 	require( 'autoprefixer' ),
-	require( 'postcss-mixins' ),
 	mqpacker( {
 		sort: true,
 	} ),
