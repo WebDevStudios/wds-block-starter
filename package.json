@@ -25,21 +25,20 @@
     "url": "https://github.com/WebDevStudios/wds-block-starter/issues"
   },
   "homepage": "https://github.com/WebDevStudios/wds-block-starter#readme",
-  "dependencies": {
-    "css-mqpacker": "^7.0.0",
-    "postcss-safe-parser": "^4.0.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@webdevstudios/css-coding-standards": "^1.0.0",
     "@webdevstudios/js-coding-standards": "~1.0.2",
     "@wordpress/scripts": "^7.1.2",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.4.2",
+    "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
     "ignore-emit-webpack-plugin": "^2.0.2",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.1",
     "postcss-loader": "^3.0.0",
+    "postcss-safe-parser": "^4.0.2",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3",
     "webpack": "^4.42.0"
