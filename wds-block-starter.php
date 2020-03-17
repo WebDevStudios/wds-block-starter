@@ -51,7 +51,7 @@ function register_block() {
 	);
 
 	// Register editor style.
-	if ( file_exists( $editor_style ) ) {
+	if ( file_exists( plugin_dir_path( __FILE__ ) . $editor_style ) ) {
 		wp_register_style(
 			'wdsbs-editor-style',
 			plugins_url( $editor_style, __FILE__ ),
@@ -61,7 +61,7 @@ function register_block() {
 	}
 
 	// Register frontend style.
-	if ( file_exists( $frontend_style ) ) {
+	if ( file_exists( plugin_dir_path( __FILE__ ) . $frontend_style ) ) {
 		wp_register_style(
 			'wdsbs-style',
 			plugins_url( $frontend_style, __FILE__ ),
