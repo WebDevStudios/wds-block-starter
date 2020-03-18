@@ -25,6 +25,11 @@ if ( editorStyles.length ) {
 	entry.editor = editorStyles;
 }
 
+const frontendScript = glob.sync( './src/frontend.js' );
+if ( frontendScript.length ) {
+	entry.frontend = frontendScript;
+}
+
 module.exports = {
 	...defaultConfig,
 	entry,
@@ -53,6 +58,7 @@ module.exports = {
 		new IgnoreEmitPlugin( [
 			'editor.asset.php',
 			'editor.js',
+			'frontend.asset.php',
 			'style.asset.php',
 			'style.js',
 		] ),
