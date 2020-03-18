@@ -29,9 +29,10 @@ defined( 'ABSPATH' ) || exit;
 function register_block() {
 
 	// Define our assets.
-	$editor_script  = 'build/index.js';
-	$editor_style   = 'build/editor.css';
-	$frontend_style = 'build/style.css';
+	$editor_script   = 'build/index.js';
+	$editor_style    = 'build/editor.css';
+	$frontend_style  = 'build/style.css';
+	$frontend_script = 'build/frontend.js';
 
 	// Verify we have an editor script.
 	if ( ! file_exists( plugin_dir_path( __FILE__ ) . $editor_script ) ) {
@@ -76,5 +77,16 @@ function register_block() {
 		'editor_style'  => 'wdsbs-editor-style',
 		'style'         => 'wdsbs-style',
 	) );
+
+	// Register frontend script.
+	if ( file_exists( plugin_dir_path( __FILE__ ) . $frontend_script ) ) {
+		wp_enqueue_script(
+			'wdsbs-frontend-script',
+			plugins_url( $frontend_script, __FILE__ ),
+			$asset_file['dependencies'],
+			$asset_file['version'],
+			true
+		);
+	}
 }
 add_action( 'init', 'WebDevStudios\BlockStarter\register_block' );
