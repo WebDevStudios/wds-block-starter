@@ -25,9 +25,6 @@ registerBlockType( 'wdsbs/rich-text-demo', {
 	keywords: [
 		__( 'richtext', 'wdsbs' ),
 	],
-	supports: {
-		multiple: false,
-	},
 	attributes: {
 		content: {
 			type: 'array',
