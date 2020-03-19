@@ -89,4 +89,4 @@ function register_block() {
 		);
 	}
 }
-add_action( 'init', 'WebDevStudios\BlockStarter\register_block' );
+add_action( 'init', __NAMESPACE__ . '\register_block' );
