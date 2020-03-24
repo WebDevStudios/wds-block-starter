@@ -31,13 +31,13 @@ npm install
 
 ## Development
 
-To watch for changes.
+Watch for changes
 
 ```bash
 npm start
 ```
 
-To build the production version of the plugin
+Build the production version of the plugin
 
 ```bash
 npm run build
