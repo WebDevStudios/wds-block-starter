@@ -20,11 +20,11 @@ if ( production ) {
 	plugins.push(
 		require( 'cssnano' )( {
 			preset: 'default',
-		} ),
+		} )
 	);
 }
 
-// Module Export
+// Module Export.
 module.exports = {
 	plugins,
 };
