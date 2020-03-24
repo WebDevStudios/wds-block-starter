@@ -12,7 +12,15 @@ A block starter for WebDevStudios projects. Includes support for Sass, PostCSS, 
 
 ## Automatic Scaffolding
 
-To easily scaffold a block for the WordPress block editor via CLI, use [@webdevstudios/create-block](https://github.com/WebDevStudios/create-block) 
+To easily scaffold a block for the WordPress block editor via CLI.
+
+You just need to provide the `Namespace/BlockName`.
+  ```bash
+  $ npm init @webdevstudios/wds-block WebDevStudios/TodoList
+  $ cd todo-list
+  $ npm start
+  ```
+See [@webdevstudios/create-block](https://github.com/WebDevStudios/create-block) for more information and options.
 
 ## Manual Installation
 
