@@ -2,18 +2,19 @@
 
 [![buddy pipeline](https://app.buddy.works/webdevstudios/wds-block-starter/pipelines/pipeline/240874/badge.svg?token=2471ae60766a1e9a657f772e493188dde748aa18c236d0b1c325e80be13a2ac6 "buddy pipeline")](https://app.buddy.works/webdevstudios/wds-block-starter/pipelines/pipeline/240874)
 
-A block starter for WebDevStudios projects.
+A block starter for WebDevStudios projects. Includes support for Sass, PostCSS, WebDevStudios Coding Standards, and build tools like [Webpack](https://webpack.js.org), [Babel](https://babeljs.io), and [ESLint](https://eslint.org).
 
 <a href="https://webdevstudios.com/contact/"><img src="https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png" alt="WebDevStudios. Your Success is Our Mission."></a>
 
-## Prerequisites
+## Requirements
 
-Like most modern development environments, you'll need to have both
+[Node](https://nodejs.org/en/) (`12.x`). We highly recommend [NVM](https://github.com/nvm-sh/nvm) so you can easily switch between Node versions. You'll also need [Composer](https://getcomposer.org/).
 
-- [NodeJS](https://nodejs.org/en/) (LTS is perferred)
-- [Composer](https://getcomposer.org/)
+## Automatic Scaffolding
 
-## Installation
+To easily scaffold a block for the WordPress block editor via CLI, use [@webdevstudios/create-block](https://github.com/WebDevStudios/create-block) 
+
+## Manual Installation
 
 Install dependencies
 
