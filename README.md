@@ -12,9 +12,8 @@ A block starter for WebDevStudios projects. Includes support for Sass, PostCSS, 
 
 ## Automatic Scaffolding
 
-To easily scaffold a block for the WordPress block editor via CLI.
+Easily scaffold a block for the WordPress block editor via CLI. You just need to provide the `Namespace/BlockName`.
 
-You just need to provide the `Namespace/BlockName`.
   ```bash
   $ npm init @webdevstudios/wds-block WebDevStudios/TodoList
   $ cd todo-list
@@ -35,7 +34,7 @@ npm install
 To watch for changes.
 
 ```bash
-npm run start
+npm start
 ```
 
 To build the production version of the plugin
@@ -64,7 +63,7 @@ Lint PHP
 npm run lint:php
 ```
 
-For more info on developing blocks, check out the [Gutenberg Handbook](https://developer.wordpress.org/block-editor/).
+For more info on the WordPress Block API, check out the [Gutenberg Handbook](https://developer.wordpress.org/block-editor/).
 
 ## Contributing and Support
 
