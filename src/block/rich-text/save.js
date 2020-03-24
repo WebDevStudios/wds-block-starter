@@ -1,5 +1,5 @@
 /**
- * WP dependencies
+ * SAVE: Rich Rext Block
  */
 const {
 	blockEditor: {

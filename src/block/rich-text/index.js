@@ -1,14 +1,9 @@
 /**
- * BLOCK: Flash Headlines
- *
- * Register Flash Headlines
+ * REGISTER: Rich Text Block.
  */
 import edit from './edit';
 import save from './save';
 
-/**
- * WordPress dependencies.
- */
 const {
 	i18n: {
 		__,
@@ -19,7 +14,7 @@ const {
 } = wp;
 
 registerBlockType( 'wdsbs/rich-text-demo', {
-	title: __( 'RichText Demo', 'wdsbs' ),
+	title: __( 'RichText Block', 'wdsbs' ),
 	icon: 'edit',
 	category: 'common',
 	keywords: [
