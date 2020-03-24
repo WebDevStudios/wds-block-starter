@@ -5,8 +5,9 @@
 	"main": "src/index.js",
 	"scripts": {
 		"start": "wp-scripts start",
-		"build": "wp-scripts build",
 		"dev": "wp-scripts start",
+		"watch": "wp-scripts start",
+		"build": "wp-scripts build",
 		"lint:css": "wp-scripts lint-style && ./node_modules/.bin/sass-lint --config ./node_modules/@webdevstudios/css-coding-standards/.sass-lint.yml '**/*.scss' --verbose",
 		"lint:js": "wp-scripts lint-js",
 		"lint:php": "./vendor/bin/phpcs --standard=./.phpcs.xml.dist --extensions=php ./ --ignore='./build/*,./node_modules/*,./vendor/*'",
