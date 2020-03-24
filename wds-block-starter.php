@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WDS Block Starter
  * Plugin URI:  https://github.com/WebDevStudios/wds-block-starter
- * Description: A starter plugin for Gutenberg blocks development.
+ * Description: A block starter for WebDevStudios projects.
  * Author: WebDevStudios
  * Author URI: https://webdevstudios.com
  * Version:     0.0.1

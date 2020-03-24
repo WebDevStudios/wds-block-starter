@@ -1,16 +1,15 @@
 {
-  "name": "webdevstudios/block-starter",
-  "description": "A Gutenberg starter plugin.",
-  "type": "wordpress-plugin",
-  "authors": [
-    {
-      "name": "Mike England",
-      "email": "mike.england@webdevstudios.com"
-    }
-  ],
-  "require": {
-  },
-  "require-dev": {
-    "webdevstudios/php-coding-standards": "^1.0"
-  }
+	"name": "webdevstudios/block-starter",
+	"description": "A block starter for WebDevStudios projects.",
+	"type": "wordpress-plugin",
+	"authors": [
+		{
+			"name": "WebDevStudios",
+			"email": "contact@webdevstudios.com"
+		}
+	],
+	"require": {},
+	"require-dev": {
+		"webdevstudios/php-coding-standards": "^1.0"
+	}
 }
