@@ -1,14 +1,8 @@
 /**
  * EDIT: Rich Rext Block
  */
-const {
-	blockEditor: {
-		RichText,
-	},
-	i18n: {
-		__,
-	},
-} = wp;
+import { RichText } from '@wordpress/block-editor';
+import { __ } from '@wordpress/i18n';
 
 const Edit = ( props ) => {
 	const {
