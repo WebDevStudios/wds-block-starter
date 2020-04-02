@@ -4,14 +4,8 @@
 import edit from './edit';
 import save from './save';
 
-const {
-	i18n: {
-		__,
-	},
-	blocks: {
-		registerBlockType,
-	},
-} = wp;
+import { __ } from '@wordpress/i18n';
+import { registerBlockType } from '@wordpress/blocks';
 
 registerBlockType( 'wdsbs/rich-text-demo', {
 	title: __( 'RichText Block', 'wdsbs' ),
