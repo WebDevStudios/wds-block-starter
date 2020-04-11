@@ -63,6 +63,13 @@ Lint PHP
 npm run lint:php
 ```
 
+### Storybook
+This plugin comes equipped with [Storybook](https://storybook.js.org/docs/basics/introduction/). Add
+your own blocks and features in to `/stories`.
+
+- Use `npm run storybook` to add live updates
+- Use `npm run build-storybook` to generate `/storybook-static`
+
 For more info on the WordPress Block API, check out the [Gutenberg Handbook](https://developer.wordpress.org/block-editor/).
 
 ## Contributing and Support
