@@ -1,11 +1,7 @@
 /**
  * SAVE: Rich Rext Block
  */
-const {
-	blockEditor: {
-		RichText,
-	},
-} = wp;
+import { RichText } from '@wordpress/block-editor';
 
 const Save = ( props ) => {
 	const {
