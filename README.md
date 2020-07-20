@@ -68,3 +68,14 @@ For more info on the WordPress Block API, check out the [Gutenberg Handbook](htt
 ## Contributing and Support
 
 Your contributions and [support tickets](https://github.com/WebDevStudios/wds-block-starter/issues) are welcome. Please see our [guidelines](https://github.com/WebDevStudios/wds-block-starter/blob/master/.github/CONTRIBUTING.md) before submitting a pull request.
+
+
+## Changelog
+
+### 1.0.0
+- Add support for WP Scripts `12.1.1`
+- Update webpack config
+- Add import statements for SCSS files
+
+### 0.0.1
+- Initial block starter setup.

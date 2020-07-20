@@ -7,6 +7,8 @@ import save from './save';
 import { __ } from '@wordpress/i18n';
 import { registerBlockType } from '@wordpress/blocks';
 
+import './style.scss';
+
 registerBlockType( 'wdsbs/rich-text-demo', {
 	title: __( 'RichText Block', 'wdsbs' ),
 	icon: 'edit',
