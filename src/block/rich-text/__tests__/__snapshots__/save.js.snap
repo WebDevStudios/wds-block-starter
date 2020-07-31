@@ -9,3 +9,17 @@ exports[`renders RichText from WordPress components 1`] = `
   }
 />
 `;
+
+exports[`renders our Save component 1`] = `
+<p
+  className="my-class"
+>
+  <div
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "My content",
+      }
+    }
+  />
+</p>
+`;
