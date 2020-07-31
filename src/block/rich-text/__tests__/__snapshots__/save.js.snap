@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders RichText from WordPress components 1`] = `
+<div
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "hi",
+    }
+  }
+/>
+`;
