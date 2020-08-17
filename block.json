@@ -1,0 +1,14 @@
+{
+	"name": "wds-block-starter",
+	"title": "WDS Block Starter",
+	"category": "text",
+	"icon": "edit",
+	"description": "A block starter for WebDevStudios projects.",
+	"textdomain": "wdsbs",
+	"supports": {
+		"html": false
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
