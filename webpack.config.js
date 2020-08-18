@@ -1,33 +1,31 @@
 /**
- * Additional Webpack settings on top of WP Scripts.
+ * Optional Webpack config.
  *
- * Conditionally include `src/frontend.js` into webpack.
+ * This config includes the `@wordpress/scripts` defaults, along with
+ * an entry path for `/src/frontend.js`. The frontend entry path is
+ * conditionally included and is not a requirement. It is safe to
+ * delete this file.
  *
  * @link https://developer.wordpress.org/block-editor/packages/packages-scripts/#provide-your-own-webpack-config
- *
  * @package WebDevStudios\BlockStarter
  */
 
-/**
- * Internal Dependencies.
- */
 const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );
 const glob = require( 'glob' );
+const IgnoreEmitPlugin = require( 'ignore-emit-webpack-plugin' );
+const entry = { ...defaultConfig.entry };
 
 /**
- * External Dependencies.
+ * If there is a `src/frontend.js`, set it as the entry file.
  */
-const IgnoreEmitPlugin = require( 'ignore-emit-webpack-plugin' );
-
-const entry = {
-	...defaultConfig.entry,
-};
-
 const frontendScript = glob.sync( './src/frontend.js' );
 if ( frontendScript.length ) {
 	entry.frontend = frontendScript;
 }
 
+/**
+ * Compile `src/frontend.js` using @wordpress/scripts.
+ */
 module.exports = {
 	...defaultConfig,
 	entry,
