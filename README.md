@@ -63,12 +63,14 @@ Lint PHP
 npm run lint:php
 ```
 
+### Webpack Config
+The `webpack.config.js` includes the WP Script defaults along with an entry path for `/src/frontend.js`. The frontend entry path is conditionally included and is not a requirement.
+
 For more info on the WordPress Block API, check out the [Gutenberg Handbook](https://developer.wordpress.org/block-editor/).
 
 ## Contributing and Support
 
 Your contributions and [support tickets](https://github.com/WebDevStudios/wds-block-starter/issues) are welcome. Please see our [guidelines](https://github.com/WebDevStudios/wds-block-starter/blob/master/.github/CONTRIBUTING.md) before submitting a pull request.
-
 
 ## Changelog
 
