@@ -7,8 +7,9 @@ import './style.scss';
 /**
  * Register block type definition.
  *
- * @link https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
+ * @author WebDevStudios
  * @since 0.0.1
+ * @link https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */
 registerBlockType( 'wdsbs/rich-text-demo', {
 	title: __( 'RichText Block', 'wdsbs' ),
