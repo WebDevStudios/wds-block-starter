@@ -1,14 +1,15 @@
-/**
- * REGISTER: Rich Text Block.
- */
 import edit from './edit';
 import save from './save';
-
 import { __ } from '@wordpress/i18n';
 import { registerBlockType } from '@wordpress/blocks';
-
 import './style.scss';
 
+/**
+ * Register block type definition.
+ *
+ * @link https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
+ * @since 0.0.1
+ */
 registerBlockType( 'wdsbs/rich-text-demo', {
 	title: __( 'RichText Block', 'wdsbs' ),
 	icon: 'edit',
