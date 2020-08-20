@@ -1,12 +1,18 @@
-/**
- * EDIT: Rich Rext Block
- */
 import { RichText } from '@wordpress/block-editor';
 import { __ } from '@wordpress/i18n';
-
 import './editor.scss';
 
-const Edit = ( props ) => {
+/**
+ * The edit function describes the structure of your block in the context of the
+ * editor. This represents what the editor will render when the block is used.
+ *
+ * @author WebDevStudios
+ * @since 0.0.1
+ * @link https://developer.wordpress.org/block-editor/developers/block-api/block-edit-save/#edit
+ * @param {Object} [props] Properties passed from the editor.
+ * @return {WPElement} Element to render.
+ */
+export default function Edit( props ) {
 	const {
 		attributes: {
 			content,
@@ -26,9 +32,7 @@ const Edit = ( props ) => {
 			className={ className }
 			onChange={ onChangeContent }
 			value={ content }
-			placeholder={ __( 'RichText Demo...', 'wdsbs' ) }
+			placeholder={ __( 'WDS RichText Demo', 'wdsbs' ) }
 		/>
 	);
-};
-
-export default Edit;
+}

@@ -2,31 +2,36 @@
 
 [![buddy pipeline](https://app.buddy.works/webdevstudios/wds-block-starter/pipelines/pipeline/240874/badge.svg?token=2471ae60766a1e9a657f772e493188dde748aa18c236d0b1c325e80be13a2ac6 "buddy pipeline")](https://app.buddy.works/webdevstudios/wds-block-starter/pipelines/pipeline/240874)
 
-A block starter for WebDevStudios projects. Includes support for Sass, PostCSS, WebDevStudios Coding Standards, and build tools like [Webpack](https://webpack.js.org), [Babel](https://babeljs.io), and [ESLint](https://eslint.org).
+A Gutenberg block starter for WebDevStudios projects. For more info on the WordPress Block API, check out the [Gutenberg Handbook](https://developer.wordpress.org/block-editor/).
 
 <a href="https://webdevstudios.com/contact/"><img src="https://webdevstudios.com/wp-content/uploads/2018/04/wds-github-banner.png" alt="WebDevStudios. Your Success is Our Mission."></a>
 
 ## Requirements
 
-[Node](https://nodejs.org/en/) (`12.x`). We highly recommend [NVM](https://github.com/nvm-sh/nvm) so you can easily switch between Node versions. You'll also need [Composer](https://getcomposer.org/).
+- [Node](https://nodejs.org/en/) (`12.x`).
+- [Composer](https://getcomposer.org/)
 
-## Automatic Scaffolding
+_We highly recommend [NVM](https://github.com/nvm-sh/nvm) so you can easily switch between Node versions._
 
-Easily scaffold a block for the WordPress block editor via CLI. You just need to provide the `Namespace/BlockName`.
+## Setup
+
+### Automatic Installation
+
+Easily scaffold a block via CLI:
 
   ```bash
-  $ npm init @webdevstudios/block WebDevStudios/TodoList
+  $ npx @webdevstudios/block WebDevStudios/TodoList
   $ cd todo-list
   $ npm start
   ```
 See [@webdevstudios/create-block](https://github.com/WebDevStudios/create-block) for more information and options.
 
-## Manual Installation
+### Manual Installation
 
 Install dependencies
 
 ```bash
-npm install
+$ npm install
 ```
 
 ## Development
@@ -37,7 +42,7 @@ Watch for changes
 npm start
 ```
 
-Build the production version of the plugin
+Build a production version
 
 ```bash
 npm run build
@@ -51,7 +56,7 @@ Lint JS
 npm run lint:js
 ```
 
-Lint CSS
+Lint SCSS/CSS
 
 ```bash
 npm run lint:css
@@ -63,17 +68,25 @@ Lint PHP
 npm run lint:php
 ```
 
-For more info on the WordPress Block API, check out the [Gutenberg Handbook](https://developer.wordpress.org/block-editor/).
+### Webpack Config (optional)
+The optional `webpack.config.js` includes the `@wordpress/scripts` defaults, along with an entry path for `/src/frontend.js`. The frontend entry path is conditionally included and is not a requirement. It can be safely deleted.
 
 ## Contributing and Support
 
 Your contributions and [support tickets](https://github.com/WebDevStudios/wds-block-starter/issues) are welcome. Please see our [guidelines](https://github.com/WebDevStudios/wds-block-starter/blob/master/.github/CONTRIBUTING.md) before submitting a pull request.
 
-
 ## Changelog
 
+### 1.1.0
+- Add support for Prettier
+- Add support for Stylelint
+- Add `block.json`
+- Improve alignment with Gutenberg's use of `@wordpress/scripts`
+- Improve PHP linting via Composer
+- Mention that `webpack.config.js` is optional
+
 ### 1.0.0
-- Add support for WP Scripts `12.1.1`
+- Add support for @wordpress/scripts `12.1.1`
 - Update webpack config
 - Add import statements for SCSS files
 
