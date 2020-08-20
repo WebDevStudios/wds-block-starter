@@ -8,10 +8,12 @@ A Gutenberg block starter for WebDevStudios projects. For more info on the WordP
 
 ## Requirements
 
-- [Node](https://nodejs.org/en/) (`12.x`).
+- [Node LTS](https://nodejs.org/en/)
 - [Composer](https://getcomposer.org/)
 
 _We highly recommend [NVM](https://github.com/nvm-sh/nvm) so you can easily switch between Node versions._
+
+---
 
 ## Setup
 
@@ -19,30 +21,34 @@ _We highly recommend [NVM](https://github.com/nvm-sh/nvm) so you can easily swit
 
 Easily scaffold a block via CLI:
 
-  ```bash
-  $ npx @webdevstudios/block WebDevStudios/TodoList
-  $ cd todo-list
-  $ npm start
-  ```
+```bash
+npx @webdevstudios/block WebDevStudios/TodoList
+cd todo-list
+npm run start
+```
 See [@webdevstudios/create-block](https://github.com/WebDevStudios/create-block) for more information and options.
 
 ### Manual Installation
 
-Install dependencies
+Install dependencies:
 
 ```bash
-$ npm install
+npm install
 ```
+
+Rename the files and functions to meet your needs.
+
+---
 
 ## Development
 
-Watch for changes
+Watch for changes:
 
 ```bash
-npm start
+npm run start
 ```
 
-Build a production version
+Build a production version:
 
 ```bash
 npm run build
@@ -50,30 +56,35 @@ npm run build
 
 ### Other handy commands
 
-Lint JS
+Lint JS:
 
 ```bash
 npm run lint:js
 ```
 
-Lint SCSS/CSS
+Lint SCSS/CSS:
 
 ```bash
 npm run lint:css
 ```
 
-Lint PHP
+Lint PHP:
 
 ```bash
-npm run lint:php
+composer run lint
 ```
 
 ### Webpack Config (optional)
-The optional `webpack.config.js` includes the `@wordpress/scripts` defaults, along with an entry path for `/src/frontend.js`. The frontend entry path is conditionally included and is not a requirement. It can be safely deleted.
+
+The optional `webpack.config.js` file includes the `@wordpress/scripts` defaults, along with an entry path for `/src/frontend.js`. The frontend entry path is conditionally included and is not a requirement. It can be safely deleted.
+
+---
 
 ## Contributing and Support
 
 Your contributions and [support tickets](https://github.com/WebDevStudios/wds-block-starter/issues) are welcome. Please see our [guidelines](https://github.com/WebDevStudios/wds-block-starter/blob/master/.github/CONTRIBUTING.md) before submitting a pull request.
+
+---
 
 ## Changelog
 
