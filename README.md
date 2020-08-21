@@ -8,8 +8,8 @@ A Gutenberg block starter for WebDevStudios projects. For more info on the WordP
 
 ## Requirements
 
-- [Node LTS](https://nodejs.org/en/)
-- [Composer](https://getcomposer.org/)
+-   [Node LTS](https://nodejs.org/en/)
+-   [Composer](https://getcomposer.org/)
 
 _We highly recommend [NVM](https://github.com/nvm-sh/nvm) so you can easily switch between Node versions._
 
@@ -26,6 +26,7 @@ npx @webdevstudios/block WebDevStudios/TodoList
 cd todo-list
 npm run start
 ```
+
 See [@webdevstudios/create-block](https://github.com/WebDevStudios/create-block) for more information and options.
 
 ### Manual Installation
@@ -88,18 +89,25 @@ Your contributions and [support tickets](https://github.com/WebDevStudios/wds-bl
 
 ## Changelog
 
+### 1.1.1
+
+-   Fix stylesheet enqueue
+
 ### 1.1.0
-- Add support for Prettier
-- Add support for Stylelint
-- Add `block.json`
-- Improve alignment with Gutenberg's use of `@wordpress/scripts`
-- Improve PHP linting via Composer
-- Mention that `webpack.config.js` is optional
+
+-   Add support for Prettier
+-   Add support for Stylelint
+-   Add `block.json`
+-   Improve alignment with Gutenberg's use of `@wordpress/scripts`
+-   Improve PHP linting via Composer
+-   Mention that `webpack.config.js` is optional
 
 ### 1.0.0
-- Add support for @wordpress/scripts `12.1.1`
-- Update webpack config
-- Add import statements for SCSS files
+
+-   Add support for @wordpress/scripts `12.1.1`
+-   Update webpack config
+-   Add import statements for SCSS files
 
 ### 0.0.1
-- Initial block starter setup.
+
+-   Initial block starter setup.

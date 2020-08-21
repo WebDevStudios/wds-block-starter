@@ -5,7 +5,7 @@
  * Description: A block starter for WebDevStudios projects.
  * Author: WebDevStudios
  * Author URI: https://webdevstudios.com
- * Version:     1.1.0
+ * Version:     1.1.1
  * License:     GPLv3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: wdsbs
