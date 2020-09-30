@@ -22,7 +22,7 @@ _We highly recommend [NVM](https://github.com/nvm-sh/nvm) so you can easily swit
 Easily scaffold a block via CLI:
 
 ```bash
-npx @webdevstudios/block WebDevStudios/TodoList
+npx @webdevstudios/create-block WebDevStudios/TodoList
 cd todo-list
 npm run start
 ```
