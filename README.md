@@ -89,6 +89,10 @@ Your contributions and [support tickets](https://github.com/WebDevStudios/wds-bl
 
 ## Changelog
 
+### 1.2.0
+
+-   Bump @wordpress/scripts from `12.1.1` to `13.0.2`.
+
 ### 1.1.1
 
 -   Fix stylesheet enqueue
