@@ -92,6 +92,10 @@ Your contributions and [support tickets](https://github.com/WebDevStudios/wds-bl
 ### 1.2.0
 
 -   Bump @wordpress/scripts from `12.1.1` to `13.0.2`.
+-   Update coding standards
+-   Update prettier settings
+-   Update eslint settings
+-   Update stylelint settings
 
 ### 1.1.1
 
