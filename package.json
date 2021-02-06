@@ -20,7 +20,7 @@
 	"devDependencies": {
 		"@webdevstudios/css-coding-standards": "^1.0.1",
 		"@webdevstudios/js-coding-standards": "^1.1.1",
-		"@wordpress/scripts": "^12.1.1",
+		"@wordpress/scripts": "^13.0.2",
 		"ignore-emit-webpack-plugin": "^2.0.2"
 	},
 	"eslintConfig": {
