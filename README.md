@@ -89,6 +89,9 @@ Your contributions and [support tickets](https://github.com/WebDevStudios/wds-bl
 
 ## Changelog
 
+### 1.2.0
+-   Upgrade `@wordpress/scripts` to `14.1.0`
+
 ### 1.1.1
 
 -   Fix stylesheet enqueue
